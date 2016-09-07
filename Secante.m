@@ -28,5 +28,5 @@ else
     fprintf('El punto x=%6.10f ES una solución del sistema\n',xk(i,2))
     plot(xk(i,2),f(xk(i,2)),'Om');
     fprintf('%14s   %14s   %14s\n','Valor a','Valor b','Error')
-    fprintf('%12.8f   %12.8f   %12.8f\n',xk(:,1),xk(:,2),xk(:,3))
+    fprintf('%12.8f   %12.8f   %12.8f\n',xk')
 end
