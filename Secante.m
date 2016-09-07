@@ -1,6 +1,6 @@
 %secante
-clc;clear all;syms x;format long;
-f=inline(input('Digite la función F= ','s'));
+clc;clear all;syms x;format longg;
+f=inline(input('Digite la funciÃ³n F= ','s'));
 set(ezplot(f),'color','m');hold on;
 
 xk=input('Digite el intervalo inicial xk=[x1 x2] ');
@@ -25,7 +25,7 @@ end
 if(i==100)
     disp('Metodo NO converge, cambie semilla');
 else
-    fprintf('El punto x=%6.10f ES una solución del sistema\n',xk(i,2))
+    fprintf('El punto x=%6.10f ES una soluciÃ³n del sistema\n',xk(i,2))
     plot(xk(i,2),f(xk(i,2)),'Om');
     fprintf('%14s   %14s   %14s\n','Valor a','Valor b','Error')
     fprintf('%12.8f   %12.8f   %12.8f\n',xk')
