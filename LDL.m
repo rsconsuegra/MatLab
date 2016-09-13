@@ -1,12 +1,17 @@
-A=input('Digite A')
-[n,m]=size(A);
-if n~=m || n<0
-    error('A must be a square matrix');
+clc;
+sw=0;
+while sw==0
+    A = input('Digite matriz cuadrada A [ ; ; ... ; ]= ');
+    if size(A,1)==size(A,2)
+        sw=1;
+    else
+        disp('Recuerda, la matriz tiene que ser cuadrada!');
+    end
 end
-L = zeros(n,n);
-for i = 1:n
-    L(i,i)=1;
-end
+
+n = size(A,1);
+
+L=eye(n);
 
 D = zeros(n,1);
 
