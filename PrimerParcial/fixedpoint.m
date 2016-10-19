@@ -1,6 +1,6 @@
 
 syms x 
-g=input('Digite Función G(x)(Recuerde, G(x)+x=F(x))=');
+g=input('Digite FunciÃ³n G(x)(Recuerde, G(x)+x=F(x))=');
 t=input('Digite invervalo para graficar [li ls]:');
 
 ezplot(g,t); hold on;
