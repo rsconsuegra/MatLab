@@ -1,15 +1,15 @@
 %Metodo de Biseccion Por Alfonso Mancilla
 clc;sw=1;syms x;format short;
- f=inline(input('Digita la función NO lineal f='));
+ f=inline(input('Digita la funciÃ³n NO lineal f='));
  ezplot(f(x));hold on;
  
 while sw==1
-    a=input('Digita el límite inferior del intervalo a=');
-    b=input('Digita el límite superior del intervalo b=');
+    a=input('Digita el lÃ­mite inferior del intervalo a=');
+    b=input('Digita el lÃ­mite superior del intervalo b=');
     if f(a)*f(b)<0
         sw=0;
     else
-        disp('La función digitada no satisface el teorema de Bolzano en el intervalo dado');
+        disp('La funciÃ³n digitada no satisface el teorema de Bolzano en el intervalo dado');
     end
 end
 
@@ -47,7 +47,7 @@ end
 if(i==100)
     disp('Metodo NO converge, cambie semilla');
 else
-    fprintf('El punto x=%6.10f ES una solución del sistema\n',c(k))
+    fprintf('El punto x=%6.10f ES una soluciÃ³n del sistema\n',c(k))
     plot(c(k),0,'Or');
     fprintf('%s\t\t%s\t\t\t%s\t\t\t%s\t\t\t%s\t\t\t%s\t\t\t%s\t\t\t%s \n','It','A','C','B','F(A)','F(B)','F(C)','Error')
     fprintf('%d\t%12.6f\t%12.6f\t%12.6f\t%12.6f\t%12.6f\t%12.6f\t%12.6f \n',B')
